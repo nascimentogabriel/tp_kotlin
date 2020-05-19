@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="?attr/actionBarSize" >
+    tools:context=".UpdateActivity">
 
-    <Button
-        android:id="@+id/btn-lista"
+    <EditText
+        android:id="@+id/edttxteditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista" />
+        android:ems="10"
+        android:hint="Novo Titulo"
+        android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/btn-cadastrar"
+        android:id="@+id/btn-atualizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Casdastrar Serie" />
-
+        android:text="Atualizar" />
 </LinearLayout>
